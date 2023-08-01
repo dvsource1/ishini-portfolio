@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="bg-black/30 max-h-min h-screen border-pink-500 border-8">
+    <main className="bg-black/50 max-h-min h-screen border-pink-500 border-8">
       <div className="flex flex-col h-full items-center justify-between py-16 px-4">
         <div className="text-center">
           <div className="text-5xl text-pink-500">
