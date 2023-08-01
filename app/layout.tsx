@@ -5,8 +5,8 @@ import { Dekko } from 'next/font/google'
 const dekko = Dekko({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sorry Nangi Baba 😞',
-  description: '💕',
+  title: 'Ishini Wijesinghe',
+  description: 'Undergraduate (BSc) of University of Kelaniya',
 }
 
 export default function RootLayout({
