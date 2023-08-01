@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'sad-face': "url('/img/bg-repeat-sad-3.png')",
+        'sad-face': "url('/img/bg-repeat-sad.png')",
       },
     },
   },
