@@ -16,7 +16,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between pt-24 bg-black">
+        <main className="flex min-h-screen flex-col pt-24 bg-black">
           {children}
         </main>
       </body>
