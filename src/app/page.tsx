@@ -1,23 +1,41 @@
+import { Facebook, MessageCircleHeart } from 'lucide-react'
+
+import Action from '@/components/Action'
 import Image from 'next/image'
+import { Paytone_One } from 'next/font/google'
 import TeacherPNG from '../assets/Teacher.png'
+
+const secondaryFont = Paytone_One({ subsets: ['latin'], weight: '400' })
 
 const Home: React.FC = () => {
   return (
     <>
-      <div className="mx-8">
-        <h2 className="text-[#D9D9D9] text-xl">A Teacher</h2>
-        <h1 className="mr-20 font-black text-8xl text-[#F29F05]">
-          Ishini Wijesinghe
-        </h1>
+      <h2 className="text-foreground text-xl">A Teacher</h2>
+      <h1
+        className={`${secondaryFont.className} mr-14 text-6xl sm:text-8xl text-primary`}
+      >
+        Ishini Wijesinghe
+      </h1>
 
-        <div className="mt-16 text-[#D9D9D9] text-lg">
-          <p>BSc in Mathematics</p>
-          <p>University of Kelaniya, Sri Lanka</p>
-        </div>
+      <div className="mt-16 text-foreground mr-14 text-lg">
+        <p>BSc in Mathematics</p>
+        <p>University of Kelaniya, Sri Lanka</p>
       </div>
-      <div className="absolute right-0 bottom-0 -scale-x-100">
-        <Image src={TeacherPNG} alt="A Teacher" />
+      <div className="md:hidden flex flex-col mt-16 gap-2 w-1/2">
+        <Action variant={'outline'} size={'sm'}>
+          <Facebook />
+          Facebook
+        </Action>
+        <Action variant={'outline'} size={'sm'}>
+          <MessageCircleHeart />
+          Whatsapp
+        </Action>
       </div>
+      <Image
+        className="absolute right-0 bottom-0 -scale-x-100 w-80 md:w-96"
+        src={TeacherPNG}
+        alt="A Teacher"
+      />
     </>
   )
 }

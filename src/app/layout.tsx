@@ -1,10 +1,10 @@
 import './globals.css'
 
+import { Space_Mono as BaseFont } from 'next/font/google'
 import Header from '@/components/Header'
-import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+const baseFont = BaseFont({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'Ishini Wigesinghe',
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${baseFont.className} dark`}>
         <Header />
-        <main className="flex min-h-screen flex-col pt-24 bg-black">
+        <main className="relative flex h-dvh flex-col pt-8 md:pt-24 bg-background">
           {children}
         </main>
       </body>

@@ -16,18 +16,16 @@ const Header: React.FC = () => {
   const pathname = usePathname()
 
   return (
-    <header className="absolute flex flex-row w-screen justify-center mt-8">
+    <header className="z-10 absolute flex flex-row w-screen justify-center mt-8">
       {/* <div className="">
         <Image src={LogoPNG} alt="IW Logo" />
       </div> */}
-      <ul className="flex flex-row gap-14 text-slate-100">
+      <ul className="hidden md:flex flex-row gap-14 text-slate-100">
         {LINKS.map(({ href, label }) => (
           <li key={href}>
             <Link
-              className={`${
-                pathname === href
-                  ? 'text-[#F29F05] underline underline-offset-2'
-                  : 'text-[#D9D9D9]'
+              className={`hover:underline underline-offset-2 ${
+                pathname === href ? 'text-primary underline' : 'text-foreground'
               }`}
               href={href}
             >

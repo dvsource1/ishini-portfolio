@@ -48,7 +48,13 @@ const ActionWrapper: React.FC = () => {
     }
   }
 
-  return label && <Action onClick={onAction}>{label}</Action>
+  return (
+    label && (
+      <Action className="" variant={'pageAction'} onClick={onAction}>
+        {label}
+      </Action>
+    )
+  )
 }
 
 export default ActionWrapper
