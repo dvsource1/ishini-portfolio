@@ -12,9 +12,10 @@ const Home: React.FC = () => {
     <>
       <h2 className="text-foreground text-xl">A Teacher</h2>
       <h1
-        className={`${secondaryFont.className} mr-14 text-6xl sm:text-8xl text-primary`}
+        className={`${secondaryFont.className} mr-14 text-7xl sm:text-8xl text-primary break-words`}
       >
-        Ishini Wijesinghe
+        Ishini
+        <br /> Wijesinghe
       </h1>
 
       <div className="mt-16 text-foreground mr-14 text-lg">
