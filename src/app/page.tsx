@@ -5,7 +5,6 @@ import CookieWarning from '@/components/CookieWarning'
 import Image from 'next/image'
 import { Paytone_One } from 'next/font/google'
 import TeacherPNG from '../assets/Teacher.png'
-import { useEffect } from 'react'
 
 const secondaryFont = Paytone_One({ subsets: ['latin'], weight: '400' })
 
@@ -19,14 +18,16 @@ const Home: React.FC = () => {
       <h1
         className={`${secondaryFont.className} mr-14 text-6xl sm:text-8xl text-primary`}
       >
-        Ishini Wijesinghe
+        Ishini
+        <br />
+        Wijesinghe
       </h1>
 
-      <div className="mt-16 text-foreground mr-14 text-lg">
+      <div className="mt-32 text-foreground mr-14 text-lg">
         <p>BSc in Mathematics</p>
         <p>University of Kelaniya, Sri Lanka</p>
       </div>
-      <div className="md:hidden flex flex-col mt-16 gap-2 w-1/2">
+      <div className="flex flex-col md:flex-row mt-4 gap-2 w-60 max-w-1/2">
         <Action variant={'outline'} size={'sm'}>
           <Facebook />
           Facebook
