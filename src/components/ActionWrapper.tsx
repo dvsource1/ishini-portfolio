@@ -50,7 +50,7 @@ const ActionWrapper: React.FC = () => {
 
   return (
     label && (
-      <Action className="" variant={'pageAction'} onClick={onAction}>
+      <Action variant={'pageAction'} onClick={onAction}>
         {label}
       </Action>
     )

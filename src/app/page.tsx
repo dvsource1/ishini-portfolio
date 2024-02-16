@@ -1,15 +1,20 @@
 import { Facebook, MessageCircleHeart } from 'lucide-react'
 
 import Action from '@/components/Action'
+import CookieWarning from '@/components/CookieWarning'
 import Image from 'next/image'
 import { Paytone_One } from 'next/font/google'
 import TeacherPNG from '../assets/Teacher.png'
+import { useEffect } from 'react'
 
 const secondaryFont = Paytone_One({ subsets: ['latin'], weight: '400' })
 
 const Home: React.FC = () => {
   return (
     <>
+      <>
+        <CookieWarning />
+      </>
       <h2 className="text-foreground text-xl">A Teacher</h2>
       <h1
         className={`${secondaryFont.className} mr-14 text-6xl sm:text-8xl text-primary`}
